@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather app with multiple functions" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon//favicon-16x16.png"
+    />
+   
+    <script defer src="script.js"></script>
+    <title>Weather Country App</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="search__container">
+        <div class="input__form">
+          <label for="search"></label>
+          <input
+            class="search__input"
+            type="text"
+            id="search"
+            placeholder="Enter city name..."
+          />
+        </div>
+      </div>
+      <button class="btn btn__search">
+        Search by City<i class="fas fa-search"></i>
+      </button>
+      <button class="btn btn__locale">Locale Weather</button>
+
+      <div class="weather"></div>
+      <div class="countries"></div>
+    </main>
+    <div class="modal hidden">
+      <p class="modal__msg"></p>
+      <button class="btn btn__close-modal">OK</button>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
